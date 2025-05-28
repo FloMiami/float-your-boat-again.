@@ -1,0 +1,64 @@
+/* Custom Styles for Float Your Boat Again Repair Services */
+
+/* Image Styling (Consider if these are for all images or specific interactive ones) */
+img {
+    /* Padding might push images inward if not desired with Bootstrap's spacing */
+    /* Consider if this padding is genuinely needed for all images, as Bootstrap handles spacing. */
+    padding: 8px 12px;
+}
+
+    /* These interactive styles (hover, active, focus) are generally better for clickable elements */
+    /* If these images are not clickable, these styles might confuse users. */
+    /* If you intend them to be interactive (e.g., image links), you might wrap them in <a> tags */
+    /* and apply these styles to the <a> or a specific class. */
+    img:hover {
+        background-color: #f0f0f0;
+        border-radius: 8px; /* Ensure this matches your desired corner radius for rounded images */
+    }
+
+    img:active {
+        background-color: #e0e0e0;
+        border-radius: 8px;
+    }
+
+    img:focus {
+        outline: 2px solid #007bff; /* Bootstrap's primary blue */
+        border-radius: 8px;
+        outline-offset: 2px; /* Add a slight offset for better visibility */
+    }
+
+    img:focus-visible { /* Modern browsers for keyboard navigation focus */
+        outline: 2px solid #007bff;
+        border-radius: 8px;
+        outline-offset: 2px;
+    }
+
+    /* focus-within is for parent elements containing focused descendants. Less common for img directly. */
+    /* If img:focus is sufficient, this might not be strictly necessary for a simple image element. */
+    img:focus-within {
+        outline: 2px solid #007bff;
+        border-radius: 8px;
+        outline-offset: 2px;
+    }
+
+        img:focus-within:active {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+
+/* Font Styling */
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* You might want to add custom styles for specific Bootstrap components here if needed, e.g.: */
+/*
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+*/
